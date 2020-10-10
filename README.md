@@ -1,4 +1,4 @@
-# FlipOne
+# FlipOne (This project was created for MakeSPP 2020)
 
 ## FlipOne is a discord bot that allows you to control a lot of areas of your server, and it also has its own website
 
