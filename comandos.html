@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+    FlipBot
+  </title>
+  <link rel="shortcut icon" width ="60" height="50" href="file:///C:/Users/xabi/OneDrive/Escritorio/Todo%20programaci%C3%B3n/pagina/Imagenes%20discord/flip-one-icon_1.ico">
+  <meta charset="utf-8"/>
+  <STYLE>A {text-decoration: none;} </STYLE>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="comandos.css">
+  
+</head>
+<body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179568814-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179568814-1');
+</script>
+  <!--//BLOQUE COOKIES-->
+<div id="barraaceptacion">
+	<div class="inner">
+		Solicitamos su permiso para obtener datos estad&iacute;sticos de su navegaci&oacute;n en esta web, en cumplimiento del Real Decreto-ley 13/2012. Si contin&uacute;a navegando consideramos que acepta el uso de cookies.
+		<a href="javascript:void(0);" class="ok" onclick="PonerCookie();"><b>OK</b></a> | 
+		<a href="http://politicadecookies.com" target="_blank" class="info">M&aacute;s informaci&oacute;n</a>
+	</div>
+</div>
+
+<script>
+function getCookie(c_name){
+	var c_value = document.cookie;
+	var c_start = c_value.indexOf(" " + c_name + "=");
+	if (c_start == -1){
+		c_start = c_value.indexOf(c_name + "=");
+	}
+	if (c_start == -1){
+		c_value = null;
+	}else{
+		c_start = c_value.indexOf("=", c_start) + 1;
+		var c_end = c_value.indexOf(";", c_start);
+		if (c_end == -1){
+			c_end = c_value.length;
+		}
+		c_value = unescape(c_value.substring(c_start,c_end));
+	}
+	return c_value;
+}
+
+function setCookie(c_name,value,exdays){
+	var exdate=new Date();
+	exdate.setDate(exdate.getDate() + exdays);
+	var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+	document.cookie=c_name + "=" + c_value;
+}
+
+if(getCookie('tiendaaviso')!="1"){
+	document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+	setCookie('tiendaaviso','1',365);
+	document.getElementById("barraaceptacion").style.display="none";
+}
+</script>
+<!--//FIN BLOQUE COOKIES-->
+  <header class="container">
+    <div class="row">
+      <a> <img loading= "lazy" src="file:///C:/Users/xabi/OneDrive/Escritorio/Todo%20programaci%C3%B3n/pagina/Imagenes%20discord/flip-one%20icon.png" width ="60" height="50"/> </a>
+       <p>  </p>
+        <h1 > <a href="file:///C:/Users/xabi/OneDrive/Escritorio/Todo%20programaci%C3%B3n/pagina/index.html">FlipBot</a></h1>
+         <p>    </p>
+          <p><a   href="google.es">Comandos</a> </p>
+           <p><a   href="google.es">Noticias</a> </p>
+            <p><a   href="https://discord.gg/xrjnxC7">Discord</a> </p>
+             <p><a   href="mailto:FlipOne-bot@outlook.es ">Contacto</a> </p>
+              <p><a   href="https://www.buymeacoffee.com/FlipOne" target="_blank">Participa</a> </p>
+      
+               <nav class="col-sm-8 text-right">
+           <div class="bmc-btnf-container"><a class="bmc-btnf" target="_blank" href="htt://psdiscord.com/api/oauth2/authorize?client_id=753600519678722168&permissions=326626423&scope=bot" xmlns="file:///C:/Users/xabi/OneDrive/Escritorio/Todo%20programaci%C3%B3n/pagina/Imagenes%20discord/flip-one-icon.ico">
+          <span class="bmc-btnf-text">Añadir a discord</span></a>
+        </div>
+      </nav>
+    </div>
+        
+  </header>
+  <main>
+  <section class="jumbotron">
+        <figure class="col-sm-6">
+          <h2>Comandos de moderación 👩‍💻</h2>
+          <h4>Controla tu servidor con los comandos mas accesibles<h4>
+        </figure>
+        <figure class="col-sm-6">
+    <div class="fz1i6o-1 Row iyvMPp" style="flex-direction: column; padding-bottom: 0px; margin-bottom: 64px;">
+        <div class="sc-1ns5huq-1 jlycxG"><div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi">
+        <span dir="ltr">!ban</span></span><span class="sc-1ns5huq-4 elCOcG">Banea a un usuario de tu servidor</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!tempban</span></span><span class="sc-1ns5huq-4 elCOcG">Baneos temporales a un usuario en tu servidor</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!clear</span></span><span class="sc-1ns5huq-4 elCOcG">Borra los mensajes de los canales</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!infractions</span></span><span class="sc-1ns5huq-4 elCOcG">Muestra las infracciones de un usuario</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!kick</span></span><span class="sc-1ns5huq-4 elCOcG">Expulsa a un usuario de tu servidor</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!mute</span></span><span class="sc-1ns5huq-4 elCOcG">Silencia a un usuario en tu servidor</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!tempmute</span></span><span class="sc-1ns5huq-4 elCOcG">Silencia temporalmente a un usuario en tu servidor</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!role-info</span></span><span class="sc-1ns5huq-4 elCOcG">Obtener información sobre un rol en particular</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!server-info</span></span><span class="sc-1ns5huq-4 elCOcG">Obtener información sobre el servidor actual</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!slowmode</span></span><span class="sc-1ns5huq-4 elCOcG">Habilita o deshabilita el modo lento en un canal</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!unban</span></span><span class="sc-1ns5huq-4 elCOcG">Desbanea a un usuario del servidor</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!unmute</span></span><span class="sc-1ns5huq-4 elCOcG">Desmutea a un usuario</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!user-info</span></span><span class="sc-1ns5huq-4 elCOcG">Obtener información sobre un usuario en particular</span>
+        </div>
+        <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!warn</span></span><span class="sc-1ns5huq-4 elCOcG">Advierte a un usuario</span>
+        </div>
+    </figure>
+    <figure class="col-sm-6">
+        <h2>Música </h2>
+        <h4>Controla tu servidor con los comandos mas accesibles<h4>
+      </figure>
+      <figure class="col-sm-6">
+    <figure class="col-sm-6">
+        <div class="fz1i6o-1 Row iyvMPp" style="flex-direction: column; padding-bottom: 0px; margin-bottom: 64px;">
+            <div class="sc-1ns5huq-1 jlycxG"><div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi">
+            <span dir="ltr">!ban</span></span><span class="sc-1ns5huq-4 elCOcG">Banea a un usuario de tu servidor</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!tempban</span></span><span class="sc-1ns5huq-4 elCOcG">Baneos temporales a un usuario en tu servidor</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!clear</span></span><span class="sc-1ns5huq-4 elCOcG">Borra los mensajes de los canales</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!infractions</span></span><span class="sc-1ns5huq-4 elCOcG">Muestra las infracciones de un usuario</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!kick</span></span><span class="sc-1ns5huq-4 elCOcG">Expulsa a un usuario de tu servidor</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!mute</span></span><span class="sc-1ns5huq-4 elCOcG">Silencia a un usuario en tu servidor</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!tempmute</span></span><span class="sc-1ns5huq-4 elCOcG">Silencia temporalmente a un usuario en tu servidor</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!role-info</span></span><span class="sc-1ns5huq-4 elCOcG">Obtener información sobre un rol en particular</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!server-info</span></span><span class="sc-1ns5huq-4 elCOcG">Obtener información sobre el servidor actual</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!slowmode</span></span><span class="sc-1ns5huq-4 elCOcG">Habilita o deshabilita el modo lento en un canal</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!unban</span></span><span class="sc-1ns5huq-4 elCOcG">Desbanea a un usuario del servidor</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!unmute</span></span><span class="sc-1ns5huq-4 elCOcG">Desmutea a un usuario</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!user-info</span></span><span class="sc-1ns5huq-4 elCOcG">Obtener información sobre un usuario en particular</span>
+            </div>
+            <div class="sc-1ns5huq-2 bwsjLi"><span class="sc-1ns5huq-3 chrUwi"><span dir="ltr">!warn</span></span><span class="sc-1ns5huq-4 elCOcG">Advierte a un usuario</span>
+            </div>
+        </figure>
+    </div>
+  </section>
+</main>
+</body>
+<figure class="col-sm-6">
+  <footer class="container">
+    <div class="sc-1659snh-0 eSjOZD">
+      <div class="fz1i6o-1 Row hlBFRk" style="border-bottom: 1px solid rgb(48, 49, 52); align-items: flex-start; padding-top: 64px; margin-bottom: 0px;">
+        <div style="margin-right: 16px; min-width: 250px;">
+          <span class="sc-1j4eqj8-0 cfUtWc">FliBot</span>
+          <p class="hvwg31-1 bwxDch">Copyright © 2020 FlipOne Xabier Nóvoa</p>
+        </div>
+        <div class="hvwg31-3 kpjVPj">
+          <div class="hvwg31-2 sZecb">
+            <a class="hvwg31-4-t gdGZhQ" href="file:///C:/Users/xabi/OneDrive/Escritorio/Todo%20programaci%C3%B3n/pagina/index.html">Inicio</a>
+            <a class="hvwg31-4-t gdGZhQ" href="file:///C:/Users/xabi/OneDrive/Escritorio/Todo%20programaci%C3%B3n/pagina/comandos.html">Comandos</a>
+            <a class="hvwg31-4-t gdGZhQ" href="#">Noticias>
+            <a class="hvwg31-4-t gdGZhQ" href="https://discord.gg/xrjnxC7">Discord</a>
+          </div>
+          <div class="hvwg31-2 sZecb">
+            <a class="hvwg31-4-t gdGZhQ" href="/premium?s=header">Premium</a>
+            <a href="mailto:FlipOne-bot@outlook.es " class="hvwg31-4 hzBTNA">Soporte</a>
+            <a href="https://discord.gg/xrjnxC7" class="hvwg31-4 hzBTNA">Servidor de soporte</a>
+          </div><div class="hvwg31-2 sZecb">
+            <a href="mailto:FlipOne-bot@outlook.es " class="hvwg31-4 gPYdku">Trabaja con nosotros</a>
+            <a href="#" class="hvwg31-4 hzBTNA">Términos</a>
+            <a href="#" class="hvwg31-4 hzBTNA">Política de privacidad</a>
+            <a href="mailto:FlipOne-bot@outlook.es " class="hvwg31-4 hzBTNA">Contacto</a>
+            <div class="tnexob-0 fPyplI p13wxv-10 kKbACM">
+             <div class="p13wxv-8 jVikpb">
+               <div class="p13wxv-9 hzjoSM">
+                <div class="p13wxv-2 bnAVxc">
+                  <div class="tnexob-1 iebjQa">
+                    <span aria-label="🇪🇸, es, flag-es" class="emoji-mart-emoji">
+                      <span style="width: 20px; height: 20px; display: inline-block; background-image: url(&quot;https://unpkg.com/emoji-datasource-twitter@5.0.1/img/twitter/sheets-256/64.png&quot;); background-size: 5700% 5700%; background-position: 1.78571% 80.3571%;">
+                      </span>
+                    </span>Español</div>
+                  </div>
+                </div>
+                <div class="p13wxv-7 eOGYQs">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fz1i6o-1 Row hNlZZA" style="margin-bottom: 0px;">
+        <div class="hvwg31-0 hvwg31-7 nxGHX">
+          <h2 class="hvwg31-5 gPNbMs">¿Preparado para convertir tu servidor en el mejor?</h2>
+          <p class="hvwg31-6 hzHOxP">FlipBot es la mejor opción para controlar tu servidor y hacerlo crecer</p>
+        </div>
+        <div class="sc-1diw3sg-0 LBBcq"    href="htt://psdiscord.com/api/oauth2/authorize?client_id=753600519678722168&permissions=326626423&scope=bot" >        
+          <button class="hvwg31-8 jCGnid sc-1x57bl6-0 ilXNtH"  color="#5ac0de">Añadir a Discord</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+ 
+</html>

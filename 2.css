@@ -1,0 +1,38 @@
+
+
+body{
+height: 100%;    
+flex-direction: column;
+overflow: hidden;
+font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif, Helvetica, arial, sans-serif;
+color: rgba(255,255,255);
+margin: 0 auto;
+scroll-behavior: smooth;
+background-image: url('https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/pexels-veeterzy-39811%20(2).jpg?alt=media&token=1d414935-ccac-4bc4-bc45-f54ddafb5e04');
+background-size: 101%;
+background-repeat: no-repeat;
+margin-left: none;
+margin-left: none;
+
+}
+h1{
+    margin-top: 20%;
+    font-size: 882.353%;
+}
+footer {
+    margin-top: 13%;
+    font-size: 77%;
+    
+   
+  }
+  
+  footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
