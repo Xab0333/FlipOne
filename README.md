@@ -10,7 +10,8 @@ Once implemented in your server (from the web page) you can use different comman
 
 ##### The flipone website has been programmed in HTML, CSS and JavaScript.The bot was programmed in JavaScript
 
-##### In bot.js file you can find the bot code
+##### In bot.js file you can find the bot code of the bot and in index.html is the homepage
+The page is in Spanish because I'm from Spain
 
 
 
