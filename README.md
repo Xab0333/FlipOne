@@ -4,7 +4,7 @@
 
 #### This idea was born with the need to create a bot for discord that was easy to handle and that had a simple and uncomplicated use, to cover a high number of users
 
-##### FlipOne has a web page (https://flipone-2c1d5.web.app/)where we can see the main characteristics of the bot and different sections where we can apollize the creator.
+##### FlipOne has a web page (https://flipone-2c1d5.web.app) where we can see the main characteristics of the bot and different sections where we can apollize the creator.
 Once implemented in your server (from the web page) you can use different commands such as:
 ! ban! kick! server! user and more.
 
