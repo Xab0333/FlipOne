@@ -1,5 +1,5 @@
 
-
+//This project was created for MakeSPP 2020 Xabier.N 
 const Discord = require('discord.js');
 const { Client, MessageAttachment } = require('discord.js');
 const { link } = require('ffmpeg-static');
