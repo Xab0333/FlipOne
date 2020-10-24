@@ -1,0 +1,285 @@
+<!--This project was created for MakeSPP 2020-->
+
+<!DOCTYPE html>
+<html  lang="es" xml:lang="es">
+ <head>
+  <title>
+    FlipOne
+  </title>
+ 
+  <meta name="Description" content="FlipOne es el bot de discord perfecto para tu servidor, y a que podrás controlar infinidad de comandos FlipBot - 2020 ">
+  <link rel="shortcut icon" width ="60" height="50" href="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/flip-one-icon_1.ico?alt=media&token=b82ca062-b46d-49db-8e26-82e641e9d7b2" >
+  <meta  charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#34383C"/>
+  <link rel="apple-touch-icon" href="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/flip-one-icon_1.ico?alt=media&token=b82ca062-b46d-49db-8e26-82e641e9d7b2">
+  <STYLE>A {text-decoration: none;} </STYLE>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="diseñoo.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-179568814-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-179568814-1');
+</script>
+<script>
+  var admin = require("firebase-admin");
+
+var serviceAccount = require("path/to/serviceAccountKey.json");
+
+admin.initializeApp({
+  credential: admin.credential.cert(serviceAccount),
+  databaseURL: "https://flipone-2c1d5.firebaseio.com"
+});
+</script>
+
+
+
+</head>
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCXU_AMY7RDQ_gMIuwBKldP-5wz2rDH5uc",
+    authDomain: "flipone-2c1d5.firebaseapp.com",
+    databaseURL: "https://flipone-2c1d5.firebaseio.com",
+    projectId: "flipone-2c1d5",
+    storageBucket: "flipone-2c1d5.appspot.com",
+    messagingSenderId: "461253689362",
+    appId: "1:461253689362:web:31d706ef827563092f58cb",
+    measurementId: "G-QWBKN81WWV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <header class="container">
+    <div class="row">
+      <a> <img  src="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/flip-one-icon_45.png?alt=media&token=d8aa4b96-7e30-4bcd-bd82-27d92b89f0b2" alt='icono FlipOne'/> </a>
+      <p>  </p>
+      <h1><a  style="color:rgb(255, 255, 255)" href="https://flipone-2c1d5.web.app/">FlipOne</a></h1>
+      <p>    </p>
+      <p><a  href="https://flipone-2c1d5.web.app/mantenimiento.html">Comandos</a> </p>
+      <p><a   href="https://flipone-2c1d5.web.app/mantenimiento.html" target="_blank" rel="noopener noreferrer">Noticias</a> </p>
+      <p><a   href="https://discord.gg/xrjnxC7"  target="_blank" rel="noopener noreferrer">Discord</a> </p>
+      <p><a   href="https://www.buymeacoffee.com/FlipOne"  target="_blank" rel="noopener noreferrer">Participa</a> </p>
+      <p><a   href="mailto:FlipOne-bot@outlook.es">Contacto</a> </p>
+      <script>
+        var mobile = {
+    Android: function() {
+      return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+      return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+      return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+      return navigator.userAgent.match(/IEMobile/i);
+    },
+    any: function() {
+      return (mobile.Android() || mobile.BlackBerry() || mobile.iOS() || mobile.Opera() || mobile.Windows());
+    }
+  };
+  
+
+   
+  console.log(mobile.any());
+
+  if(mobile.any()){
+      window.location.href = "https://flipone-2c1d5.web.app/smart.html";
+      
+  }
+  else{
+    
+  }
+      </script> 
+      
+      <nav class="col-sm-8 text-right">
+        <div class="bmc-btnf-container"><a class="bmc-btnf"  target="_blank" rel="noopener noreferrer" href="https://discord.com/api/oauth2/authorize?client_id=753600519678722168&permissions=326626423&scope=bot" >
+          <span class="bmc-btnf-text">Añadir a discord</span></a>
+          </div>
+      </nav>
+    </div>
+    
+        
+  </header>
+  <main>
+  <section class="jumbotron">
+    <div class="container">
+      <div class="row text-center">
+        <h2>El bot definitivo!!!</h2>
+      </br>
+         <h4>Administra la configuración, añade roles, música y mucho mas solo con un simple clic y sin complicaciones!!</h4>
+        </br>
+         <div>
+          <div class="bmc-btnf-container"><a class="bmc-btnf"  target="_blank" rel="noopener noreferrer" href="https://discord.com/api/oauth2/authorize?client_id=753600519678722168&permissions=326626423&scope=bot" >
+          <span class="bmc-btnf-text">Añadir a discord</span></a>
+          </div>
+          </br>
+          </br>
+          <div class="bmc-btnfl-container"><a class="bmc-btnfl" target="_self" href="#abajo">
+          <span class="bmc-btnfl-text">Características</span></a>
+        
+           </div>
+           </nav>
+          </div>
+         </div>
+      </div>
+    </div>
+    
+  </section>
+  <a name="abajo"></a>
+</br>
+</br>
+</br>
+</br>
+</br>
+
+  <section class="container">
+    <div itemscope>
+    <!-- Primer row-->
+    <div class="row">
+      <figure class="col-sm-6">
+      </br>
+      </br>
+      </br>
+      </br>
+        <h2>Infinidad de comandos</h2>
+         <h4>Gracias a una gran variedad de comandos podrás controlar gran parte de tu servidor sin tener que salir del chat<h4>
+         
+    	</figure>
+    	<figure class="col-sm-6">
+        <a> <img loading= "lazy" src="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/discord-server.png?alt=media&token=6f127e50-3d98-4a9c-8fd4-ed95743525c1" alt="Un usuario utiliza el comando !server en el chat de voz y FlipOne le da información del servidor " width ="200" height="350"/> </a> 
+      </figure>
+    </div>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+  
+  
+  <!-- Segundo row-->
+    <div class="row">
+      <figure class="col-sm-6">
+        <div class="bmc-btnft-container">
+          <a>  <img loading= "lazy" src="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/discord-conect.png?alt=media&token=c21e4e5b-cc58-41c3-bcb9-e70d03a314fc" alt="Imagen donde se aprecia como conectar el bot al chat de voz" width ="200" height="350"/> </a> 
+        </div>
+        </figure>
+      <figure class="col-sm-6">
+      </br>
+    </br>
+    </br>
+    </br>
+      <h2>Transmisión en un canal de voz</h2>
+       <h4>Escucha tu música favorita,un video de youtube o utilizalo como una radio si salir del chat.
+      </br>
+      </br>
+        <h4>Utilizando  los múltiples comandos podrás unirte a un chat de voz con un bot y escuchar lo que quieras</h4> 
+      </figure>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+    <!-- Aquí empieza la segunda parte-->
+    <!-- Tercer row-->
+    <div class="row">
+      <figure class="col-sm-6">
+      </br>
+      </br>
+      </br>
+      </br>
+        <h2>Controla a los usuarios y sus roles</h2>
+         <h4>Con un simple comando controla y administra los roles del servidor<h4>
+         
+    	</figure>
+    	<figure class="col-sm-6">
+        <a > <img loading= "lazy" src="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/discord-user.png?alt=media&token=6ba0627d-7b57-44f4-98c6-50e9d5d39c99" alt="Un usuario escribe el comando !user y el bot le responde con la información del usuario, además tambien escribe el comando !addrole" width ="200" height="350"/> </a> 
+      </figure>
+    </div>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  <!-- Cuarto row-->
+    <div class="row">
+      <figure class="col-sm-6">
+        <p></p>
+        <a >  <img loading= "lazy" src="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/discord-voicechat.png?alt=media&token=3ef29b58-8613-4c97-be39-32fecbd4c177" alt="La imagen muestra una imagen del chat de voz de discord con el bot incluido" width ="200" height="350"/> </a> 
+      </figure>
+      <figure class="col-sm-6">
+      </br>
+    </br>
+    </br>
+    </br>
+      <h2>Transmisión en un canal de voz</h2>
+       <h4>Escucha tu música favorita,un video de youtube o utilizalo como una radio si salir del chat.
+      </br>
+      </br>
+       <h4> Utilizando  los múltiples comandos podrás unirte a un chat de voz con un bot y escuchar lo que quieras</h4> 
+      </figure>
+    </div>
+  </div>
+  </section>
+</main>
+  <footer class="container">
+    <div class="row">
+      <p class="col-sm-4">&copy; 2020 Xabier.N</p>
+      <ul class="col-sm-8">
+        <li class="col-sm-1">
+          <img src="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/twitter-grey.svg?alt=media&token=aac80213-3276-4200-8bd7-45853826b5f6" alt="Icono twiter">
+        </li>
+        
+        <li class="col-sm-1">
+          <img src="https://firebasestorage.googleapis.com/v0/b/flipone-2c1d5.appspot.com/o/instagram-grey.svg?alt=media&token=a8a0ba8c-3e01-4ae5-a540-328c72116a1b" alt="Icono istagram" >
+        </li>
+      </ul>
+    </div>
+    
+  </footer>
+
+ </body>
+</html>
